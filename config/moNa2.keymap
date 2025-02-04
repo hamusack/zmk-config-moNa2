@@ -64,7 +64,7 @@
             >;
 
             sensor-bindings =
-                <&scroll_down_up>,
+                <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -76,7 +76,7 @@
 &kp RGUI      &kp LALT    &kp LCTRL      &kp SPACE     &mkp MB1       &kp TAB          &kp BSPC      &kp RET                                             &kp GRAVE
             >;
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
