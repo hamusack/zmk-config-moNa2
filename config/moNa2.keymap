@@ -53,15 +53,6 @@
 
             tap-ms = <20>;
         };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <10>;
-            label = "NEW_BEHAVIOR";
-        };
     };
 
     keymap {
@@ -75,7 +66,9 @@
 &kp RGUI          &kp LALT  &kp LCTRL  &lt 1 SPACE  &mkp MB1  &lt 2 TAB           &kp BACKSPACE     &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&new_behavior>, <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_1 {
